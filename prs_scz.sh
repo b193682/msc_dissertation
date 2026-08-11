@@ -7,14 +7,12 @@
 #$ -l h_vmem=32G
 #$ -l h_rt=24:00:00
 # Specifies the output and erorr file locations for the output.
-#$ -o /home/s2223599/gwas_pipeline/logs/prs_scz.log
-#$ -e /home/s2223599/gwas_pipeline/logs/prs_scz.err
+#$ -o /home/xxxxxxxx/gwas_pipeline/logs/prs_scz.log
+#$ -e /home/xxxxxxxx/gwas_pipeline/logs/prs_scz.err
 
 #Initialise the modules system to work in qsub job scripts.
 . /etc/profile.d/modules.sh
 module load igmm/apps/PRSice/2.1.11
-
-cd /exports/eddie/scratch/s2223599/gwas_pipeline
 
 # PRS for schizophrenia against all four SPQ-B phenotypes
 
