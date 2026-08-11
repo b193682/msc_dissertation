@@ -1,7 +1,7 @@
 # Generated Table 3, significant SNPs identified for the disorganisation dimension of schizotypy in GS
 
 # Set working directory to analysis pipeline folder
-setwd("exports/eddie/scratch/s2223599/gwas_pipeline")
+setwd("exports/eddie/scratch/xxxxxxxx/gwas_pipeline")
 
 # Create data frame of genome-wide significant SNPs, input data manually entered from GWAS disorg output.
 sig_snps <- data.frame(
