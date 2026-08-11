@@ -7,8 +7,8 @@
 #$ -l h_vmem=32G
 #$ -l h_rt=24:00:00
 # Specifies the output and erorr file locations for the output.
-#$ -o /home/s2223599/gwas_pipeline/logs/prs_cog.log
-#$ -e /home/s2223599/gwas_pipeline/logs/prs_cog.err
+#$ -o /home/xxxxxxxx/gwas_pipeline/logs/prs_cog.log
+#$ -e /home/xxxxxxxx/gwas_pipeline/logs/prs_cog.err
 
 #Initialise the modules system to work in qsub job scripts.
 . /etc/profile.d/modules.sh
