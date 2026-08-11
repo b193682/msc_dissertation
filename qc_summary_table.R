@@ -1,7 +1,7 @@
 # Generates Table 1, summarising quality control steps.
 
 # Set working directory to analysis pipeline folder.
-setwd("/exports/eddie/scratch/s2223599/gwas_pipeline")
+setwd("/exports/eddie/scratch/xxxxxxxx/gwas_pipeline")
 
 # Create QC summary table.
 qc_table <- data.frame(
