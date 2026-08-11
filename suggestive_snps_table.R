@@ -1,7 +1,7 @@
 # Generates Table 2, lead suggestive SNPs (p < 1x10-5) for non-significant schizotypy phenotypes.
 
 # Set working directory to analysis pipeline folder
-setwd("/exports/eddie/scratch/s2223599/gwas_pipeline")
+setwd("/exports/eddie/scratch/xxxxxxxx/gwas_pipeline")
 
 #Create data frame for table, input data are from GWAS summary files, rs numbers from hrcmerge.txt (HRC reference panel) from Nagy et al. (2017). 
 suggestive_snps <- data.frame(
