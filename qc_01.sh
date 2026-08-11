@@ -13,9 +13,7 @@
 module load igmm/apps/plink/1.90b7.2
 module load R
 
-#Navigates to pipeline directory.
-cd /exports/eddie/scratch/s2223599/gwas_pipeline
-#Step 1: Initial SNP and sample filters
+#Initial SNP and sample filters
 #Minor Allele Frequency < 0.01, SNP missingness > 5%, HWE deviation, sample missingness > 5%
 plink --bfile data/GS_merged \
   --allow-no-sex \
@@ -28,32 +26,32 @@ plink --bfile data/GS_merged \
   --make-bed \
   --out qc/GS_qc1
 
-#Step 2: LD Pruning
+#LD Pruning
 #Removes SNPs with r2 > 0.2
 plink --bfile qc/GS_qc1 \
   --allow-no-sex \
   --indep-pairwise 50 5 0.2 \
   --out qc/GS_ldpruned
   
-#Step 3: Extract LD pruned SNPs
+#Extract LD pruned SNPs
 plink --bfile qc/GS_qc1 \
   --allow-no-sex \
   --extract qc/GS_ldpruned.prune.in \
   --make-bed \
   --out qc/GS_pruned
 
-# Step 4: Heterozygosity check
-# Generates per-sample heterozygosity statistics for outlier removal
+# Heterozygosity check
+# Generates heterozygosity statistics to remove outliers
 plink --bfile qc/GS_pruned \
   --allow-no-sex \
   --het \
   --out qc/GS_het
 
-#Step 5: Remove heterozygosity outliers
+#Remove heterozygosity outliers
 #R script removes individuals more than 3 SD from mean heterozygosity rate
-Rscript /home/s2223599/gwas_pipeline/scripts/het_filter.R
+Rscript /home/xxxxxxxx/gwas_pipeline/scripts/het_filter.R
 
-#Step 6: Apply heterozygosity exclusions to full SNP set
+#Apply heterozygosity exclusions to SNPs
 plink --bfile qc/GS_qc1 \
   --allow-no-sex \
   --remove qc/samples_to_remove.txt \
