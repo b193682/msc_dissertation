@@ -6,8 +6,8 @@
 #$ -l h_vmem=16G
 #$ -l h_rt=24:00:00
 # Specifies the output and error file locations for the output
-#$ -o /home/s2223599/gwas_pipeline/logs/merge_rs.log
-#$ -e /home/s2223599/gwas_pipeline/logs/merge_rs.err
+#$ -o /home/xxxxxxxx/gwas_pipeline/logs/merge_rs.log
+#$ -e /home/xxxxxxxx/gwas_pipeline/logs/merge_rs.err
 
 cd /exports/eddie/scratch/s2223599/gwas_pipeline
 
