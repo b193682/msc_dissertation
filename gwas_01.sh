@@ -6,8 +6,8 @@
 #$ -l h_vmem=32G
 #$ -l h_rt=100:00:00
 # Specifies the output and error file locations for the output.
-#$ -o /home/s2223599/gwas_pipeline/logs/GS_gwas.log
-#$ -e /home/s2223599/gwas_pipeline/logs/GS_gwas.err
+#$ -o /home/xxxxxxxx/gwas_pipeline/logs/GS_gwas.log
+#$ -e /home/xxxxxxxx/gwas_pipeline/logs/GS_gwas.err
 
 #Initialise the modules system to work in qsub job scripts.
 . /etc/profile.d/modules.sh
