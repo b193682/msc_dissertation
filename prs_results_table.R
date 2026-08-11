@@ -1,7 +1,7 @@
 #Generates Table 4, significant PRS associations after FDR correction across all tests.
 
 # Set working directory to analysis pipeline folder.
-setwd("/exports/eddie/scratch/s2223599/gwas_pipeline")
+setwd("/exports/eddie/scratch/xxxxxxxx/gwas_pipeline")
 
 # Create data frame of PRS association tests, input data manually entered from PRSice-2 summary files.
 results <- data.frame(
