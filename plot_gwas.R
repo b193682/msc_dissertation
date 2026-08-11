@@ -1,7 +1,7 @@
 # GWAS plotting script
 # Produces Manhattan and QQ plots for each SPQ phenotype
 # Adds personal R library path to find user-installed packages
-.libPaths(c("/home/s2223599/R/x86_64-pc-linux-gnu-library/4.4", .libPaths()))
+.libPaths(c("/home/xxxxxxxx/R/x86_64-pc-linux-gnu-library/4.4", .libPaths()))
 # Loads qqman package for GWAS visualisation (Turner, 2014)
 library(qqman)
 
